@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-accent-400: #ffd4a6;
+
+    --color-compliement-400: #4cdeff;
+
+    --color-dominant-900: #110f0e;
+    --color-dominant-100: #ffffff;
+}
+
+body {
+    background-color: var(--color-dominant-900);
+}
+
+h1 {
+    color: var(--color-dominant-100);
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+h2 {
+    text-align: center;
+    color: var(--color-dominant-100);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+
+    animation: background-pen 6s linear infinite;
+    animation-delay: 2s;
+
+    background-image: linear-gradient(
+        to right,
+        #fff,
+        #ffffff55,
+        #fff
+    );
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    white-space: nowrap;
+}
+
+h3 {
+    color: var(--color-accent-400);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    animation: background-pen 6s linear infinite;
+
+    background-image: linear-gradient(
+        to right,
+        #ffd4a6,
+        #ffd4a67e,
+        #ffd4a6
+    );
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    white-space: nowrap;
+}
+
+h4 {
+    text-align: center;
+    color: var(--color-accent-400);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 21px;
+
+    animation: background-pen 6s linear infinite;
+
+    background-image: linear-gradient(
+        to right,
+        #ffd4a6,
+        #ffd4a67e,
+        #ffd4a6
+    );
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    white-space: nowrap;
+}
+
+@keyframes background-pen {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: 200% center;
+    }
+}
+
+p {
+    color: var(--color-dominant-100);
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: var(--color-dominant-100);
+    font-size: 25px;
+}
+
+
+body {
+    background: radial-gradient(at center, #4cdeff6c -100%, transparent 70%),
+                radial-gradient(at center, #4cdeffb5 -100%, transparent 70%),
+                radial-gradient(at center, #ffd4a652 -100%, transparent 70%),
+                radial-gradient(at center, #ffd4a672 -100%, transparent 70%),
+                radial-gradient(at center, #ffd4a672 -100%, transparent 70%),
+                #110f0e;
+    background-repeat: no-repeat;
+    background-size:
+                     35em 35em,
+                     25em 25em,
+                     20em 20em,
+                     50em 50em,
+                     45em 45em,
+                     auto auto;
+    background-position:
+                         60vw 50vh,
+                         -10em -20vh,
+                         -10em 80vh,
+                         40vw 5vh,
+                         center 140vh,
+                         0 0;
+}
+
+/* HEADER */
+header {
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: 5000;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 75px;
+    margin-inline: 4em;
+}
+
+header img {
+    width: 150px;
+}
+
+
+/* BANNER */
+.banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 4em;
+}
+
+.banner img {
+    height: 70vh;
+    align-self: flex-end;
+    transform: translateY(50px);
+}
+
+.banner button {
+    border: 2px var(--color-accent-400) solid;
+    padding: 10px 40px;
+    border-radius: 100px;
+    font-size: 21px;
+    transform: translateY(6em);
+}
+
+
+/* Antique */
+.antique {
+    margin: 30em 4em;
+}
+
+.antique .grid {
+    display: grid;
+    grid-template-columns: 20% 60% 20%; 
+    grid-template-areas: 
+    "a img b"
+    "c img d";
+    margin-block: 1em;
+}
+
+.antique .grid .item1 {
+    grid-area: a;
+    margin-bottom: 7em;
+}
+
+.antique .grid .item2 {
+    grid-area: b;
+    margin-bottom: 7em;
+}
+
+.antique .grid .item3 {
+    grid-area: c;
+}
+
+.antique .grid .item4 {
+    grid-area: d;
+}
+
+.antique .grid .image-center {
+    grid-area: img;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.antique .grid .image-center img {
+    width: 600px;
+}
+
+#expandable {
+    display: none;
+    height: 0;
+    transition: 2ms ease-in;
+}
+
+#expandable.open {
+    display: block;
+    height: auto;
+}
+
+
+
+.power-of-the-church {
+    margin: 30em 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-wrapper {
+    width: 900px;
+    height: 300px;
+    overflow-x: scroll;
+    padding: 100px 100px 0;
+} 
+
+.power-of-the-church .timeline {
+    width: 200%;
+    height: 20px;
+    list-style: none;
+    text-align: justify;
+    margin: 80px auto;
+    background: linear-gradient(to bottom, 
+     rgba(255,255,255,0) 0%,
+     rgba(255,255,255,0) 45%, 
+     #ffd4a6 51%, rgba(255,255,255,0) 57%, 
+     rgba(255,255,255,0) 100%);
+}
+
+.timeline .after {
+    display: inline-block;
+    content: '';
+    width: 100%;
+}
+
+.timeline li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #ffd4a6;
+    text-align: center;
+    line-height: 1.2;
+    position: relative;
+    border-radius: 50%;
+}
+
+.timeline li .before {
+    display: inline-block;
+    font-size: 26px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-accent-400);
+}
+
+.timeline li:nth-child(odd) .before {
+    top: -40px;
+}
+
+.timeline li:nth-child(even) .before {
+    bottom: -40px;
+}
+
+.timeline li .after {
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-dominant-100);
+    width: 200px;
+}
+
+.timeline li:nth-child(odd) .after {
+	bottom: 0;
+	margin-bottom: -10px;
+	transform: translate(-50%, 100%);
+}
+.timeline li:nth-child(even) .after {
+	top: 0;
+	margin-top: -10px;
+	transform: translate(-50%, -100%);
+}
+
+.hidden.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.details {
+    background-color: red;
+    width: 200px;
+    height: 150px;
+}
+
+.pros-cons{
+    margin-inline: 4em;
+}
+
+.pros-cons .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4em;
+    border: var(--color-accent-400) solid 1px;
+    height: 500px;
+
+    margin-block: 6em;
+
+    background-image: url(img/brancusi.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+}
+
+.pros-cons .wrapper .arg:nth-child(even) {
+    text-align: right;
+} 
+
+.pros-cons .wrapper .arg img {
+    width: 50px;
+    height: 50px;
+}
+
+.pros-cons .wrapper .arg {
+    position: relative;
+}
+
+.pros-cons .wrapper .arg p:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-accent-400);
+    transform-origin: bottom center;
+    transition: 1s ease all;
+    text-decoration: underline;
+}
+
+.pros-cons .wrapper .arg:nth-child(even) p:after {
+    background-color: var(--color-compliement-400);
+}
+
+.pros-cons .wrapper .arg p:hover:after {
+    transform: scaleX(1);
+    bottom: 1;
+    transform-origin: bottom center;
+    text-decoration: underline;
+}
+
+.present .wrapper {
+    margin-inline: 4em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+
+
+    background: url(img/corruscant.png),
+                url(img/tokyo.png),
+                url(img/dystopian.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position: top left,
+                         top right,
+                         bottom center;
+}
+
+.present .wrapper .text {
+    width: 300px;
+    text-align: center;
+    margin-top: 10em;
+}
+
+.present .wrapper .text p {
+    margin-bottom: 10px;
+}
