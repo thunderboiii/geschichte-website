@@ -123,6 +123,15 @@ body {
                 radial-gradient(at center, #ffd4a652 -100%, transparent 70%),
                 radial-gradient(at center, #ffd4a672 -100%, transparent 70%),
                 radial-gradient(at center, #ffd4a672 -100%, transparent 70%),
+                radial-gradient(at center, #4cdeff6c -100%, transparent 70%),
+                radial-gradient(at center, #ffd4a672 -100%, transparent 70%),
+                radial-gradient(at center, #4cdeff6c -100%, transparent 70%),
+                radial-gradient(at center, #ffd4a672 -100%, transparent 70%),
+                radial-gradient(at center, #4cdeff6c -100%, transparent 70%),
+                radial-gradient(at center, #ffd4a672 -100%, transparent 70%),
+                radial-gradient(at center, #4cdeff6c -100%, transparent 70%),
+                radial-gradient(at center, #4cdeff6c -100%, transparent 70%),
+                radial-gradient(at center, #4cdeff6c -100%, transparent 70%),
                 #110f0e;
     background-repeat: no-repeat;
     background-size:
@@ -131,6 +140,15 @@ body {
                      20em 20em,
                      50em 50em,
                      45em 45em,
+                     30em 30em,
+                     45em 45em,
+                     40em 40em,
+                     35em 35em,
+                     35em 35em,
+                     40em 40em,
+                     20em 20em,
+                     20em 20em,
+                     20em 20em,
                      auto auto;
     background-position:
                          60vw 50vh,
@@ -138,6 +156,15 @@ body {
                          -10em 80vh,
                          40vw 5vh,
                          center 140vh,
+                         center 150vh,
+                         -20em 230vh,
+                         60vw 300vh,
+                         60vw 420vh,
+                         -20em 480vh,
+                         center 560vh,
+                         4em 567vh,
+                         65vw 567vh,
+                         center 605vh,
                          0 0;
 }
 
@@ -414,6 +441,10 @@ header img {
     background-position: top left,
                          top right,
                          bottom center;
+}
+
+.present {
+    margin-top: 20em
 }
 
 .present .wrapper .text {
